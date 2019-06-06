@@ -3,7 +3,7 @@ $array = range(1, 100);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         if ($_POST['input'] < 0 || $_POST['input'] > 100) {
-            throw new Exception(" 0<number<100 ");
+            throw new Exception(" 0 less number than 100 ");
         }
         echo $array[$_POST['input']];
 
